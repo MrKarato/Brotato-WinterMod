@@ -1,0 +1,20 @@
+{
+	"name": "WinterMod",
+	"namespace": "ClassiestKarato",
+	"version_number": "0.0.1",
+	"description": "A collection of winter themed mods.",
+	"website_url": "https://github.com/MrKarato/Brotato-WinterMod",
+	"dependencies": [
+		"Darkly77-ContentLoader",
+		"dami-ModOptions"
+	],
+	"extra": {
+		"godot": {
+			"incompatibilities": [],
+			"authors": ["Classiest", "MrKarato"],
+			"compatible_mod_loader_version": "6.3.0",
+			"compatible_game_version": ["1.1.13.2"],
+			"config_defaults": {}
+		}
+	}
+}

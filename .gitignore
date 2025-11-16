@@ -1,0 +1,6 @@
+*
+!*/
+!.gitignore
+!.import/ClassiestKarato*.md5
+!.import/ClassiestKarato*.stex
+!mods-unpacked/ClassiestKarato-WinterMod/**
