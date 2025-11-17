@@ -1,12 +1,14 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://items/characters/character_data.gd" type="Script" id=1]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/appearances/WinterMod_santa_face.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
 my_id = "character_santa"
-unlocked_by_default = false
+unlocked_by_default = true
 can_be_looted = true
+icon = ExtResource( 2 )
 name = "CHARACTER_SANTA"
 tier = 0
 value = 1
