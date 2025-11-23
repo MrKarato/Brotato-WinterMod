@@ -13,6 +13,12 @@ const MYMOD_LOG = "ClassiestKarato-WinterMod" # full ID of your mod (AuthorName-
 
 var dir = ""
 var ext_dir = ""
+var translations = ""
+
+
+func _init()->void:
+	dir = ModLoaderMod.get_unpacked_dir().plus_file(MOD_DIR)
+	add_translations()
 
 
 func _ready()->void:
@@ -23,4 +29,9 @@ func _ready()->void:
 	ModLoaderLog.info(str("Translation Demo: ", tr("WINTERMOD_READY_TEXT")), MYMOD_LOG)
 	
 	var ContentLoader = get_node("/root/ModLoader/Darkly77-ContentLoader/ContentLoader")
-	ContentLoader.load_data(dir + "res://mods-unpacked/ClassiestKarato-WinterMod/content_data/winter_mod_resources.tres", MYMOD_LOG)
+	ContentLoader.load_data(dir + "content_data/winter_mod_resources.tres", MYMOD_LOG)
+
+
+func add_translations() -> void:
+	translations = dir.plus_file("translations")
+	ModLoaderMod.add_translation(translations.plus_file("winter-mod.en.translation"))

@@ -1,15 +1,19 @@
-[gd_resource type="Resource" load_steps=3 format=2]
+[gd_resource type="Resource" load_steps=7 format=2]
 
 [ext_resource path="res://items/characters/character_data.gd" type="Script" id=1]
-[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/appearances/WinterMod_santa_face.png" type="Texture" id=2]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/santa_mouth_appearance.tres" type="Resource" id=2]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/santa_hat_appearance.tres" type="Resource" id=3]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/santa_eyes_appearance.tres" type="Resource" id=4]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/santa_icon.png" type="Texture" id=5]
+[ext_resource path="res://weapons/ranged/pistol/1/pistol_data.tres" type="Resource" id=6]
 
 [resource]
 script = ExtResource( 1 )
 my_id = "character_santa"
 unlocked_by_default = true
 can_be_looted = true
-icon = ExtResource( 2 )
-name = "CHARACTER_SANTA"
+icon = ExtResource( 5 )
+name = "WINTERMOD_SANTA"
 tier = 0
 value = 1
 effects = [  ]
@@ -19,9 +23,9 @@ unlock_codex_descr_after_get_it = 1
 is_cursed = false
 curse_factor = 0.0
 max_nb = -1
-item_appearances = [  ]
+item_appearances = [ ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ) ]
 tags = [  ]
 wanted_tags = [  ]
 banned_item_groups = [  ]
 banned_items = [  ]
-starting_weapons = [  ]
+starting_weapons = [ ExtResource( 6 ) ]
