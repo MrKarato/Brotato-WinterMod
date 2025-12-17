@@ -1,11 +1,13 @@
-[gd_resource type="Resource" load_steps=7 format=2]
+[gd_resource type="Resource" load_steps=9 format=2]
 
 [ext_resource path="res://items/characters/character_data.gd" type="Script" id=1]
 [ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/santa_mouth_appearance.tres" type="Resource" id=2]
 [ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/santa_hat_appearance.tres" type="Resource" id=3]
 [ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/santa_eyes_appearance.tres" type="Resource" id=4]
 [ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/santa_icon.png" type="Texture" id=5]
-[ext_resource path="res://weapons/ranged/pistol/1/pistol_data.tres" type="Resource" id=6]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/effects/santa_starting_bag_effect.tres" type="Resource" id=6]
+[ext_resource path="res://dlcs/dlc_1/weapons/melee/sickle/1/sickle_data.tres" type="Resource" id=7]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/effects/santa_less_fruit_effect.tres" type="Resource" id=8]
 
 [resource]
 script = ExtResource( 1 )
@@ -16,7 +18,7 @@ icon = ExtResource( 5 )
 name = "WINTERMOD_SANTA"
 tier = 0
 value = 1
-effects = [  ]
+effects = [ ExtResource( 6 ), ExtResource( 8 ) ]
 tracking_text = ""
 is_lockable = true
 unlock_codex_descr_after_get_it = 1
@@ -28,4 +30,4 @@ tags = [  ]
 wanted_tags = [  ]
 banned_item_groups = [  ]
 banned_items = [  ]
-starting_weapons = [ ExtResource( 6 ) ]
+starting_weapons = [ ExtResource( 7 ) ]
