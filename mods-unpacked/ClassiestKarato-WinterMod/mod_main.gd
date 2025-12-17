@@ -18,6 +18,7 @@ var translations = ""
 
 func _init()->void:
 	dir = ModLoaderMod.get_unpacked_dir().plus_file(MOD_DIR)
+	install_script_extensions()
 	add_translations()
 
 
@@ -35,3 +36,8 @@ func _ready()->void:
 func add_translations() -> void:
 	translations = dir.plus_file("translations")
 	ModLoaderMod.add_translation(translations.plus_file("winter-mod.en.translation"))
+
+
+func install_script_extensions() -> void:
+	ext_dir = dir.plus_file("extensions")
+	ModLoaderMod.install_script_extension(ext_dir + "/main.gd")

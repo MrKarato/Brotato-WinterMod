@@ -1,34 +1,38 @@
-[gd_resource type="Resource" load_steps=10 format=2]
+[gd_resource type="Resource" load_steps=14 format=2]
 
 [ext_resource path="res://items/characters/character_data.gd" type="Script" id=1]
 [ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/toymaker/effects/toymaker_effect_0.tres" type="Resource" id=2]
 [ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/toymaker/effects/toymaker_effect_1.tres" type="Resource" id=3]
 [ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/toymaker/effects/toymaker_effect_2.tres" type="Resource" id=4]
-[ext_resource path="res://weapons/ranged/double_barrel_shotgun/1/double_barrel_shotgun_data.tres" type="Resource" id=5]
-[ext_resource path="res://dlcs/dlc_1/characters/buccaneer/buccaneer_icon.png" type="Texture" id=6]
-[ext_resource path="res://items/characters/pacifist/pacifist_mouth_appearance.tres" type="Resource" id=7]
-[ext_resource path="res://items/characters/technomage/appearances/technomage_app_0.tres" type="Resource" id=8]
-[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/santa_hat_appearance.tres" type="Resource" id=9]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/toymaker/effects/toymaker_effect_3.tres" type="Resource" id=5]
+[ext_resource path="res://weapons/melee/wrench/1/wrench_data.tres" type="Resource" id=6]
+[ext_resource path="res://dlcs/dlc_1/characters/buccaneer/buccaneer_icon.png" type="Texture" id=7]
+[ext_resource path="res://items/characters/pacifist/pacifist_mouth_appearance.tres" type="Resource" id=8]
+[ext_resource path="res://items/characters/technomage/appearances/technomage_app_0.tres" type="Resource" id=9]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/santa_hat_appearance.tres" type="Resource" id=10]
+[ext_resource path="res://weapons/melee/screwdriver/1/screwdriver_data.tres" type="Resource" id=11]
+[ext_resource path="res://dlcs/dlc_1/weapons/melee/lute/1/lute_data.tres" type="Resource" id=12]
+[ext_resource path="res://dlcs/dlc_1/weapons/melee/brick/1/brick_data.tres" type="Resource" id=13]
 
 [resource]
 script = ExtResource( 1 )
 my_id = "character_toymaker"
 unlocked_by_default = true
 can_be_looted = true
-icon = ExtResource( 6 )
-name = "CHARACTER_TOYMAKER"
+icon = ExtResource( 7 )
+name = "WINTERMOD_TOYMAKER"
 tier = 0
 value = 1
-effects = [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ]
+effects = [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ) ]
 tracking_text = ""
 is_lockable = true
 unlock_codex_descr_after_get_it = 1
 is_cursed = false
 curse_factor = 0.0
 max_nb = -1
-item_appearances = [ ExtResource( 9 ), ExtResource( 8 ), ExtResource( 7 ) ]
+item_appearances = [ ExtResource( 10 ), ExtResource( 9 ), ExtResource( 8 ) ]
 tags = [  ]
 wanted_tags = [  ]
 banned_item_groups = [  ]
 banned_items = [  ]
-starting_weapons = [ ExtResource( 5 ) ]
+starting_weapons = [ ExtResource( 6 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 12 ) ]
