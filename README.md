@@ -5,6 +5,7 @@ Bring the cold to your Brotato run all year round! This mod adds winter and holi
 - 2+ new characters
     - Santa Claus
     - The Yeti
+    - Toymaker
 - Winter themed map
     - New themed visuals
 
