@@ -4,9 +4,9 @@
 
 [resource]
 script = ExtResource( 1 )
-key = "trees"
-text_key = "effect_trees"
-value = 2
+key = "recycling_gains"
+text_key = "effect_recycling_gains"
+value = -99
 custom_key = ""
 storage_method = 0
 effect_sign = 3
