@@ -7,11 +7,11 @@
 [ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/santa_icon.png" type="Texture" id=5]
 [ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/effects/santa_starting_bag_effect.tres" type="Resource" id=6]
 [ext_resource path="res://dlcs/dlc_1/weapons/melee/sickle/1/sickle_data.tres" type="Resource" id=7]
-[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/effects/santa_less_fruit_effect.tres" type="Resource" id=8]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/effects/santa_more_crates.tres" type="Resource" id=8]
 
 [resource]
 script = ExtResource( 1 )
-my_id = "character_santa"
+my_id = "wintermod_character_santa"
 unlocked_by_default = true
 can_be_looted = true
 icon = ExtResource( 5 )
