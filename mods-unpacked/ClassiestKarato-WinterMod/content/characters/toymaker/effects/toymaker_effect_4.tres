@@ -4,10 +4,10 @@
 
 [resource]
 script = ExtResource( 1 )
-key = ""
-text_key = "WINTERMOD_EFFECT_TOYMAKER_RECYCLE"
-value = 1
+key = "stat_engineering"
+text_key = ""
+value = 25
 custom_key = ""
-storage_method = 1
+storage_method = 0
 effect_sign = 3
 custom_args = [  ]
