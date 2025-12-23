@@ -1,13 +1,16 @@
 extends "res://main.gd"
 
+var turret_flame_effect = load("res://items/all/turret_flame/turret_flame_effect_1.tres")
+var turret_laser_effect = load("res://items/all/turret_laser/turret_laser_effect_1.tres")
+var turret_rocket_effect = load("res://items/all/turret_rocket/turret_rocket_effect_1.tres")
 
 func on_item_box_discard_button_pressed(item_data: ItemParentData, consumable: UpgradesUI.ConsumableToProcess) -> void :
 	var player_index = consumable.player_index
 	if isToyMaker(player_index):
-		RunData.add_stat("stat_engineering", 1, player_index)
+		var value = item_data.tier + 1
+		RunData.add_stat("stat_engineering", value, player_index)
 
 	.on_item_box_discard_button_pressed(item_data, consumable)
-
 
 
 func on_item_box_ban_button_pressed(item_data: ItemParentData, consumable: UpgradesUI.ConsumableToProcess) -> void :
@@ -34,10 +37,6 @@ func _on_neutral_died(neutral: Neutral, args: Entity.DieArgs) -> void :
 
 func getToyMakerTurret(player_index: int) -> Resource:
 	var engineering = Utils.get_stat("stat_engineering", player_index)
-
-	var turret_flame_effect = load("res://items/all/turret_flame/turret_flame_effect_1.tres")
-	var turret_laser_effect = load("res://items/all/turret_laser/turret_laser_effect_1.tres")
-	var turret_rocket_effect = load("res://items/all/turret_rocket/turret_rocket_effect_1.tres")
 
 	if engineering >= 25 and engineering < 50:
 		return turret_flame_effect

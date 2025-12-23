@@ -1,13 +1,14 @@
-[gd_resource type="Resource" load_steps=4 format=2]
+[gd_resource type="Resource" load_steps=5 format=2]
 
 [ext_resource path="res://mods-unpacked/Darkly77-ContentLoader/content_data.gd" type="Script" id=1]
 [ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/santa_data.tres" type="Resource" id=2]
 [ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/toymaker/toymaker_data.tres" type="Resource" id=3]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/items/turret/toymaker_turret_data.tres" type="Resource" id=4]
 
 [resource]
 script = ExtResource( 1 )
 characters = [ ExtResource( 2 ), ExtResource( 3 ) ]
-items = [  ]
+items = [ ExtResource( 4 ) ]
 weapons = [  ]
 weapons_characters = [  ]
 sets = [  ]
