@@ -1,7 +1,8 @@
 keys,en
 WINTERMOD_READY_TEXT,Winter mod translation file working correctly
 WINTERMOD_SANTA,Santa
-WINTERMOD_EFFECT_ENEMY_MORE_CRATES,Enemies are twice as likely to drop crates
+WINTERMOD_SANTA_EFFECT_ENEMY_MORE_CRATES,Enemies are twice as likely to drop crates
+WINTERMOD_SANTA_EFFECT_CRATE_STAT_GAIN,Gain {0} {1} when picking up a crate
 WINTERMOD_TOYMAKER,Toymaker
 WINTERMOD_EFFECT_TOYMAKER_TREE_TURRET,Killing a tree spawns a turret. Every {0} engineering increases the turret's tier
 WINTERMOD_EFFECT_TOYMAKER_RECYCLE,+{0} engineering when recycling and banning crate items

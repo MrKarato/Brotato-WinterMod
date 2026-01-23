@@ -41,3 +41,6 @@ func add_translations() -> void:
 func install_script_extensions() -> void:
 	ext_dir = dir.plus_file("extensions")
 	ModLoaderMod.install_script_extension(ext_dir + "/main.gd")
+	ModLoaderMod.install_script_extension(ext_dir + "/player.gd")
+	ModLoaderMod.install_script_extension(ext_dir + "/player_run_data.gd")
+	ModLoaderMod.install_script_extension(ext_dir + "/run_data.gd")

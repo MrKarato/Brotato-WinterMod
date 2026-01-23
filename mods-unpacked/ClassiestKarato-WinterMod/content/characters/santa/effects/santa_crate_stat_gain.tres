@@ -4,10 +4,10 @@
 
 [resource]
 script = ExtResource( 1 )
-key = "crate_chance"
-text_key = "WINTERMOD_SANTA_EFFECT_ENEMY_MORE_CRATES"
-value = 100
-custom_key = ""
-storage_method = 0
+key = "stat_melee_damage"
+text_key = "WINTERMOD_SANTA_EFFECT_CRATE_STAT_GAIN"
+value = 2
+custom_key = "wintermod_santa_melee_on_crate"
+storage_method = 1
 effect_sign = 3
 custom_args = [  ]

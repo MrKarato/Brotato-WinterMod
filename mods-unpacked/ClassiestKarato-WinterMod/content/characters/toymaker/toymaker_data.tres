@@ -9,7 +9,7 @@
 [ext_resource path="res://dlcs/dlc_1/characters/buccaneer/buccaneer_icon.png" type="Texture" id=7]
 [ext_resource path="res://items/characters/pacifist/pacifist_mouth_appearance.tres" type="Resource" id=8]
 [ext_resource path="res://items/characters/technomage/appearances/technomage_app_0.tres" type="Resource" id=9]
-[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/santa_hat_appearance.tres" type="Resource" id=10]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/appearances/santa_hat_appearance.tres" type="Resource" id=10]
 [ext_resource path="res://weapons/melee/screwdriver/1/screwdriver_data.tres" type="Resource" id=11]
 [ext_resource path="res://dlcs/dlc_1/weapons/melee/lute/1/lute_data.tres" type="Resource" id=12]
 [ext_resource path="res://dlcs/dlc_1/weapons/melee/brick/1/brick_data.tres" type="Resource" id=13]
@@ -24,6 +24,7 @@
 [ext_resource path="res://weapons/ranged/smg/1/smg_data.tres" type="Resource" id=22]
 [ext_resource path="res://weapons/ranged/revolver/1/revolver_data.tres" type="Resource" id=23]
 [ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/toymaker/effects/toymaker_scaling_effect.tres" type="Resource" id=24]
+
 
 [resource]
 script = ExtResource( 1 )

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/santa_hat.png-6c1672cea2de09d72d0f1565b7dbc024.stex"
+path="res://.import/santa_mouth.png-d508261b978ae00a801084852a53ad9e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/santa_hat.png"
-dest_files=[ "res://.import/santa_hat.png-6c1672cea2de09d72d0f1565b7dbc024.stex" ]
+source_file="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/appearances/santa_mouth.png"
+dest_files=[ "res://.import/santa_mouth.png-d508261b978ae00a801084852a53ad9e.stex" ]
 
 [params]
 
