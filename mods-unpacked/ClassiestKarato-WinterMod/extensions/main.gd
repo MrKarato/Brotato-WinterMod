@@ -49,4 +49,52 @@ func getToyMakerTurret(player_index: int) -> Resource:
 
 
 func isToyMaker(player_index: int) -> bool:
-	return RunData.get_player_character(player_index).my_id == "character_toymaker"
+	return RunData.get_player_character(player_index).my_id == "wintermod_character_toymaker"
+	
+# This is unchanged except to skip Santa. If another mod interacts with this code, it is incompatible.
+func on_consumable_picked_up(consumable: Node, player_index: int) -> void:
+	if consumable.already_picked_up:
+		return
+
+	consumable.already_picked_up = true
+	_consumables.erase(consumable)
+	add_node_to_pool(consumable)
+
+	var item_box_gold_effect = RunData.get_player_effect("item_box_gold", player_index)
+	if (consumable.consumable_data.my_id == "consumable_item_box" or consumable.consumable_data.my_id == "consumable_legendary_item_box") and item_box_gold_effect != 0:
+		RunData.add_gold(item_box_gold_effect, player_index)
+		RunData.add_tracked_value(player_index, "item_bag", item_box_gold_effect)
+
+	var consumable_data = consumable.consumable_data
+	if consumable_data.to_be_processed_at_end_of_wave:
+		var consumable_to_process = UpgradesUI.ConsumableToProcess.new()
+		consumable_to_process.consumable_data = consumable_data
+
+		var player_index_to_add_to = player_index
+
+		if ProgressData.settings.share_coop_loot:
+			# Check which players can receive crates.
+			var valid_players = RunData.wintermod_get_crate_players()
+			# If none can (All Santas), let all of them receive crates.
+			if valid_players.size() == 0:
+				for i in RunData.get_player_count():
+					valid_players.append(i)
+			# Gets the index of a random crate receiving player.
+			player_index_to_add_to = valid_players[randi() % valid_players.size()]
+
+			# Checks if any other crate receiving player has less crates, gives it to that player if found.
+			for i in valid_players:
+				if _consumables_to_process[i].size() < _consumables_to_process[player_index_to_add_to].size():
+					player_index_to_add_to = i
+
+		consumable_to_process.player_index = player_index_to_add_to
+		_consumables_to_process[player_index_to_add_to].push_back(consumable_to_process)
+		_things_to_process_player_containers[player_index_to_add_to].consumables.add_element(consumable_data)
+
+	_players[player_index].on_consumable_picked_up(consumable_data)
+
+	if not _cleaning_up:
+		RunData.handle_explode_effect("explode_on_consumable", consumable.global_position, player_index)
+		RunData.handle_explode_effect("explode_on_consumable_burning", consumable.global_position, player_index)
+
+	RunData.apply_item_effects(consumable.consumable_data, player_index)

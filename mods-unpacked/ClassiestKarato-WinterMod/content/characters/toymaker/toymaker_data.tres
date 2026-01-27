@@ -23,7 +23,7 @@
 
 [resource]
 script = ExtResource( 1 )
-my_id = "character_toymaker"
+my_id = "wintermod_character_toymaker"
 unlocked_by_default = true
 can_be_looted = true
 icon = ExtResource( 7 )

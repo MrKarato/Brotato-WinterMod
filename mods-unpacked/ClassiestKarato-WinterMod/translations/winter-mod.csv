@@ -1,6 +1,7 @@
 keys,en
 WINTERMOD_READY_TEXT,Winter mod translation file working correctly
 WINTERMOD_SANTA,Santa
+WINTERMOD_SANTA_EFFECT_NO_CRATE_ITEMS,Santa doesn't receive crate items (unless he's the only option)
 WINTERMOD_SANTA_EFFECT_ENEMY_MORE_CRATES,Enemies are twice as likely to drop crates
 WINTERMOD_SANTA_EFFECT_CRATE_STAT_GAIN,Gain {0} {1} when picking up a crate
 WINTERMOD_TOYMAKER,Toymaker
