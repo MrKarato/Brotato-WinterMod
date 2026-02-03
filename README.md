@@ -9,7 +9,7 @@ Bring the cold to your Brotato run all year round! This mod adds winter and holi
 - Winter themed map
     - New themed visuals
 
-[**Download mod here.**](https://youtube.com/)
+**~~Download mod here.~~ (Currently unavailable in the workshop).**
 
 
 ## Requirements
@@ -18,5 +18,6 @@ Bring the cold to your Brotato run all year round! This mod adds winter and holi
 - [ModOptions](https://github.com/BrotatoMods/Brotato-Mod-Options)
 
 ## Credits
-- Classiest
-- MrKarato
+- [Classiest](https://github.com/theclassiest)
+- [MrKarato](https://github.com/MrKarato)
+- [Vex](https://github.com/CloudWantDie)
