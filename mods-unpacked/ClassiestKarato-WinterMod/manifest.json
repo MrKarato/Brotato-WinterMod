@@ -6,7 +6,7 @@
 	"website_url": "https://github.com/MrKarato/Brotato-WinterMod",
 	"dependencies": [
 		"Darkly77-ContentLoader",
-		"dami-ModOptions"
+		"Oudstand-ModOptions"
 	],
 	"extra": {
 		"godot": {

@@ -8,5 +8,7 @@ WINTERMOD_TOYMAKER,Toymaker
 WINTERMOD_EFFECT_TOYMAKER_TREE_TURRET,Killing a tree spawns a turret. Every {0} engineering increases the turret's tier
 WINTERMOD_EFFECT_TOYMAKER_RECYCLE,+{0} engineering when recycling and banning crate items
 WINTERMOD_EFFECT_TOYMAKER_NO_WRENCH,You cannot obtain wrenches
-ITEM_TOYMAKER_TURRET_0,Toymaker Turrets
-TOYMAKER_EFFECT_TURRET_0,A turret spawns every {0} seconds dealing {1} ({2}) damage
+WINTERMOD_ITEM_TOYMAKER_TURRET_0,Toymaker Turrets
+WINTERMOD_TOYMAKER_EFFECT_TURRET_0,A turret spawns every {0} seconds dealing {1} ({2}) damage
+WINTERMOD_VISUAL_OVERHAUL, "Winter themed visual overhaul"
+WINTERMOD_INFO_TEXT, "Settings for the Winter Mod"

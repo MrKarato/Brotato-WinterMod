@@ -7,7 +7,7 @@
 [resource]
 script = ExtResource( 1 )
 key = ""
-text_key = "toymaker_effect_turret_0"
+text_key = "WINTERMOD_TOYMAKER_EFFECT_TURRET_0"
 value = 1
 custom_key = ""
 storage_method = 0
