@@ -45,7 +45,7 @@
 							"WINTERMOD_WINTER",
 							"WINTERMOD_DEFAULT"
 						],
-						"default": "WINTERMOD_DEFAULT"
+						"default": "WINTERMOD_WINTER"
 					}
 				}
 			},

@@ -6,10 +6,10 @@
 [ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/toymaker/effects/toymaker_effect_2.tres" type="Resource" id=4]
 [ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/toymaker/effects/toymaker_effect_turret.tres" type="Resource" id=5]
 [ext_resource path="res://weapons/melee/stick/1/stick_data.tres" type="Resource" id=6]
-[ext_resource path="res://items/characters/technomage/technomage_icon.png" type="Texture" id=7]
-[ext_resource path="res://items/characters/pacifist/pacifist_mouth_appearance.tres" type="Resource" id=8]
-[ext_resource path="res://items/characters/technomage/appearances/technomage_app_0.tres" type="Resource" id=9]
-[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/santa/appearances/wintermod_santa_hat_appearance.tres" type="Resource" id=10]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/toymaker/appearances/wintermod_toymaker_eyes.tres" type="Resource" id=7]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/toymaker/appearances/wintermod_toymaker_beard.tres" type="Resource" id=8]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/toymaker/appearances/wintermod_toymaker_ears.tres" type="Resource" id=9]
+[ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/toymaker/wintermod_toymaker_icon.png" type="Texture" id=10]
 [ext_resource path="res://weapons/melee/screwdriver/1/screwdriver_data.tres" type="Resource" id=11]
 [ext_resource path="res://mods-unpacked/ClassiestKarato-WinterMod/content/characters/toymaker/effects/toymaker_effect_4.tres" type="Resource" id=15]
 [ext_resource path="res://weapons/melee/plank/1/plank_data.tres" type="Resource" id=16]
@@ -26,7 +26,7 @@ script = ExtResource( 1 )
 my_id = "wintermod_character_toymaker"
 unlocked_by_default = true
 can_be_looted = true
-icon = ExtResource( 7 )
+icon = ExtResource( 10 )
 name = "WINTERMOD_TOYMAKER"
 tier = 0
 value = 1
@@ -37,7 +37,7 @@ unlock_codex_descr_after_get_it = 1
 is_cursed = false
 curse_factor = 0.0
 max_nb = -1
-item_appearances = [ ExtResource( 10 ), ExtResource( 9 ), ExtResource( 8 ) ]
+item_appearances = [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 7 ) ]
 tags = [  ]
 wanted_tags = [  ]
 banned_item_groups = [  ]
