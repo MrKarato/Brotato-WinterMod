@@ -3,7 +3,7 @@ extends "res://entities/units/player/player.gd"
 func on_consumable_picked_up(consumable_data: ConsumableData) -> void :
 	var crate_stats = RunData.get_player_effect("wintermod_santa_melee_on_crate", player_index)
 	
-	if crate_stats.size() > 0:
+	if crate_stats.size() > 0 and consumable_data.my_id == "consumable_item_box":
 		for i in crate_stats.size():
 			var stat = crate_stats[i]
 			RunData.add_stat(stat[0], stat[1], player_index)
